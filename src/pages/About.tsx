@@ -70,20 +70,7 @@ const About = () => {
             <CardHeader>
               <CardTitle className="text-2xl text-accent">Technology & Methods</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Badge variant="secondary">DFT Calculations</Badge>
-                <Badge variant="secondary">B3LYP/6-31G*</Badge>
-                <Badge variant="secondary">Gaussian 16</Badge>
-                <Badge variant="secondary">Machine Learning</Badge>
-                <Badge variant="secondary">Quantum Descriptors</Badge>
-              </div>
-              <p className="text-left text-base">Molecular Quantum Descriptors used in this work are computed via Density Functional Theory (DFT) employing the B3LYP functional with the 6-31G* basis set. These calculations were performed using the xtb and Multiwfn software where applicable, and optimized geometries were obtained through self-consistent field (SCF) convergence and Hessian confirmation steps.
-
-The Eutectic Formation Index (EFI) values presented are machine learning–derived scores, trained on a curated dataset of over 500 experimentally validated DES systems. The model incorporates thermodynamic and electronic descriptors such as interaction energy, dipole moment, frontier orbital energies (HOMO/LUMO), and polarizability to predict the eutectic-forming propensity of each HBD–HBA pair.
-
-The approach balances first-principles quantum chemistry with data-driven predictions, enabling accurate, scalable screening of novel DES candidates.</p>
-            </CardContent>
+            
           </Card>
 
           {/* Usage Guide */}
