@@ -1,10 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Layout from '@/components/Layout';
-
 const About = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-8">
@@ -80,11 +78,11 @@ const About = () => {
                 <Badge variant="secondary">Machine Learning</Badge>
                 <Badge variant="secondary">Quantum Descriptors</Badge>
               </div>
-              <p>
-                Our molecular descriptors are calculated using Density Functional Theory (DFT) with the 
-                B3LYP functional and 6-31G* basis set. The EFI (Eutectic Formation Index) scores are 
-                derived from machine learning models trained on experimental data from over 500 DES systems.
-              </p>
+              <p className="text-left text-base">Molecular Quantum Descriptors used in this work are computed via Density Functional Theory (DFT) employing the B3LYP functional with the 6-31G* basis set. These calculations were performed using the xtb and Multiwfn software where applicable, and optimized geometries were obtained through self-consistent field (SCF) convergence and Hessian confirmation steps.
+
+The Eutectic Formation Index (EFI) values presented are machine learning–derived scores, trained on a curated dataset of over 500 experimentally validated DES systems. The model incorporates thermodynamic and electronic descriptors such as interaction energy, dipole moment, frontier orbital energies (HOMO/LUMO), and polarizability to predict the eutectic-forming propensity of each HBD–HBA pair.
+
+The approach balances first-principles quantum chemistry with data-driven predictions, enabling accurate, scalable screening of novel DES candidates.</p>
             </CardContent>
           </Card>
 
@@ -127,8 +125,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
