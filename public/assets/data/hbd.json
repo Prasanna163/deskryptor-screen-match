@@ -1,82 +1,485 @@
-[
-  {
-    "id": "choline",
-    "name": "Choline Chloride",
-    "formula": "C5H14ClNO",
-    "mw": 139.62,
-    "descriptors": {
-      "homo": -0.285,
-      "lumo": 0.142,
-      "gap": 0.427,
-      "energy": -458.92,
-      "dipole": 15.8,
-      "volume": 128.3,
-      "polarizability": 12.4,
-      "electrophilicity": 1.25
+{
+    "Ascorbic_Acid": {
+        "HOMO (eV)": -10.6424,
+        "LUMO (eV)": -7.6021,
+        "HOMO-LUMO Gap (eV)": 3.0403,
+        "Total Energy (Eh)": -41.298261714657,
+        "Dipole Moment (D)": 7.753
+    },
+    "Alanine": {
+        "HOMO (eV)": -10.3697,
+        "LUMO (eV)": -7.1256,
+        "HOMO-LUMO Gap (eV)": 3.2440999999999995,
+        "Total Energy (Eh)": -21.042878098974,
+        "Dipole Moment (D)": 2.211
+    },
+    "Pyrrolidone": {
+        "HOMO (eV)": -10.6335,
+        "LUMO (eV)": -6.0284,
+        "HOMO-LUMO Gap (eV)": 4.605099999999999,
+        "Total Energy (Eh)": -19.141125368293,
+        "Dipole Moment (D)": 4.52
+    },
+    "Imidazole": {
+        "HOMO (eV)": -10.1901,
+        "LUMO (eV)": -5.5761,
+        "HOMO-LUMO Gap (eV)": 4.613999999999999,
+        "Total Energy (Eh)": -14.297664816926,
+        "Dipole Moment (D)": 3.867
+    },
+    "Pyrrole": {
+        "HOMO (eV)": -9.7716,
+        "LUMO (eV)": -4.8191,
+        "HOMO-LUMO Gap (eV)": 4.9525,
+        "Total Energy (Eh)": -14.017147811268,
+        "Dipole Moment (D)": 2.099
+    },
+    "Aniline": {
+        "HOMO (eV)": -9.5315,
+        "LUMO (eV)": -5.8115,
+        "HOMO-LUMO Gap (eV)": 3.72,
+        "Total Energy (Eh)": -19.315783049829,
+        "Dipole Moment (D)": 2.177
+    },
+    "Lactic_Acid": {
+        "HOMO (eV)": -11.3085,
+        "LUMO (eV)": -7.3071,
+        "HOMO-LUMO Gap (eV)": 4.0014,
+        "Total Energy (Eh)": -21.684466565272,
+        "Dipole Moment (D)": 2.717
+    },
+    "Cyclohexanol": {
+        "HOMO (eV)": -10.8457,
+        "LUMO (eV)": 1.196,
+        "HOMO-LUMO Gap (eV)": 12.0417,
+        "Total Energy (Eh)": -23.048310972989,
+        "Dipole Moment (D)": 2.106
+    },
+    "Pyrrolidine": {
+        "HOMO (eV)": -9.6277,
+        "LUMO (eV)": 0.7473,
+        "HOMO-LUMO Gap (eV)": 10.375,
+        "Total Energy (Eh)": -16.071776772638,
+        "Dipole Moment (D)": 1.377
+    },
+    "Trifluoroethanol": {
+        "HOMO (eV)": -12.636,
+        "LUMO (eV)": -1.4653,
+        "HOMO-LUMO Gap (eV)": 11.1707,
+        "Total Energy (Eh)": -24.072306414202,
+        "Dipole Moment (D)": 2.223
+    },
+    "Propan-1-ol": {
+        "HOMO (eV)": -11.1038,
+        "LUMO (eV)": 1.1526,
+        "HOMO-LUMO Gap (eV)": 12.2564,
+        "Total Energy (Eh)": -14.558591272613,
+        "Dipole Moment (D)": 2.016
+    },
+    "Glucose": {
+        "HOMO (eV)": -10.4842,
+        "LUMO (eV)": -1.1399,
+        "HOMO-LUMO Gap (eV)": 9.3443,
+        "Total Energy (Eh)": -43.35974375547,
+        "Dipole Moment (D)": 4.868
+    },
+    "Uracil": {
+        "HOMO (eV)": -11.1193,
+        "LUMO (eV)": -8.0508,
+        "HOMO-LUMO Gap (eV)": 3.0685,
+        "Total Energy (Eh)": -24.614946967891,
+        "Dipole Moment (D)": 4.617
+    },
+    "Butan-2-ol": {
+        "HOMO (eV)": -10.9441,
+        "LUMO (eV)": 0.9249,
+        "HOMO-LUMO Gap (eV)": 11.869,
+        "Total Energy (Eh)": -17.725093001551,
+        "Dipole Moment (D)": 1.844
+    },
+    "Ethylene_Glycol": {
+        "HOMO (eV)": -11.3392,
+        "LUMO (eV)": 0.3074,
+        "HOMO-LUMO Gap (eV)": 11.6466,
+        "Total Energy (Eh)": -15.448803997842,
+        "Dipole Moment (D)": 2.733
+    },
+    "Piperidine": {
+        "HOMO (eV)": -9.7233,
+        "LUMO (eV)": 0.5289,
+        "HOMO-LUMO Gap (eV)": 10.2522,
+        "Total Energy (Eh)": -22.396339434281,
+        "Dipole Moment (D)": 0.971
+    },
+    "Citric_Acid": {
+        "HOMO (eV)": -11.5702,
+        "LUMO (eV)": -7.7731,
+        "HOMO-LUMO Gap (eV)": 3.7971,
+        "Total Energy (Eh)": -45.421210170362,
+        "Dipole Moment (D)": 2.367
+    },
+    "Butylamine": {
+        "HOMO (eV)": -9.9795,
+        "LUMO (eV)": 0.6516,
+        "HOMO-LUMO Gap (eV)": 10.6311,
+        "Total Energy (Eh)": -17.081608481136,
+        "Dipole Moment (D)": 1.326
+    },
+    "Glutamic_Acid": {
+        "HOMO (eV)": -10.6776,
+        "LUMO (eV)": -7.3563,
+        "HOMO-LUMO Gap (eV)": 3.3213,
+        "Total Energy (Eh)": -34.498255309718,
+        "Dipole Moment (D)": 0.446
+    },
+    "Hydrogen_Fluoride": {
+        "HOMO (eV)": -13.2814,
+        "LUMO (eV)": 0.5544,
+        "HOMO-LUMO Gap (eV)": 13.8358,
+        "Total Energy (Eh)": -5.222873960321,
+        "Dipole Moment (D)": 2.534
+    },
+    "Indole": {
+        "HOMO (eV)": -9.7263,
+        "LUMO (eV)": -6.2786,
+        "HOMO-LUMO Gap (eV)": 3.4477,
+        "Total Energy (Eh)": -23.617247801754,
+        "Dipole Moment (D)": 2.223
+    },
+    "Hydroquinone": {
+        "HOMO (eV)": -10.0254,
+        "LUMO (eV)": -6.2425,
+        "HOMO-LUMO Gap (eV)": 3.7829,
+        "Total Energy (Eh)": -24.026784476103,
+        "Dipole Moment (D)": 0.0
+    },
+    "Benzyl_Alcohol": {
+        "HOMO (eV)": -10.8133,
+        "LUMO (eV)": -6.171,
+        "HOMO-LUMO Gap (eV)": 4.6423,
+        "Total Energy (Eh)": -23.102728192175,
+        "Dipole Moment (D)": 1.775
+    },
+    "Aspartic_Acid": {
+        "HOMO (eV)": -10.6893,
+        "LUMO (eV)": -7.6173,
+        "HOMO-LUMO Gap (eV)": 3.071999999999999,
+        "Total Energy (Eh)": -31.329481485216,
+        "Dipole Moment (D)": 2.1
+    },
+    "Methylamine": {
+        "HOMO (eV)": -10.0434,
+        "LUMO (eV)": 0.9284,
+        "HOMO-LUMO Gap (eV)": 10.9718,
+        "Total Energy (Eh)": -7.587182824731,
+        "Dipole Moment (D)": 1.456
+    },
+    "Serine": {
+        "HOMO (eV)": -10.4352,
+        "LUMO (eV)": -7.1132,
+        "HOMO-LUMO Gap (eV)": 3.322,
+        "Total Energy (Eh)": -25.099230364224,
+        "Dipole Moment (D)": 2.995
+    },
+    "Fructose": {
+        "HOMO (eV)": -10.7743,
+        "LUMO (eV)": -7.814,
+        "HOMO-LUMO Gap (eV)": 2.9603,
+        "Total Energy (Eh)": -43.331711898708,
+        "Dipole Moment (D)": 5.58
+    },
+    "N-Methylacetamide": {
+        "HOMO (eV)": -10.6161,
+        "LUMO (eV)": -6.0904,
+        "HOMO-LUMO Gap (eV)": 4.5257,
+        "Total Energy (Eh)": -16.984553107118,
+        "Dipole Moment (D)": 4.389
+    },
+    "Guanine": {
+        "HOMO (eV)": -9.8213,
+        "LUMO (eV)": -7.0361,
+        "HOMO-LUMO Gap (eV)": 2.785200000000001,
+        "Total Energy (Eh)": -31.975836959098,
+        "Dipole Moment (D)": 5.483
+    },
+    "Hydrazine": {
+        "HOMO (eV)": -9.9752,
+        "LUMO (eV)": 0.3201,
+        "HOMO-LUMO Gap (eV)": 10.2953,
+        "Total Energy (Eh)": -7.817403196162,
+        "Dipole Moment (D)": 2.262
+    },
+    "Butan-1-ol": {
+        "HOMO (eV)": -10.9491,
+        "LUMO (eV)": 1.1255,
+        "HOMO-LUMO Gap (eV)": 12.0746,
+        "Total Energy (Eh)": -17.718822225736,
+        "Dipole Moment (D)": 1.686
+    },
+    "Urea": {
+        "HOMO (eV)": -10.7567,
+        "LUMO (eV)": -5.4081,
+        "HOMO-LUMO Gap (eV)": 5.3486,
+        "Total Energy (Eh)": -14.097128378055,
+        "Dipole Moment (D)": 4.845
+    },
+    "Glycerol": {
+        "HOMO (eV)": -10.889,
+        "LUMO (eV)": 0.1991,
+        "HOMO-LUMO Gap (eV)": 11.0881,
+        "Total Energy (Eh)": -22.679780146194,
+        "Dipole Moment (D)": 2.816
+    },
+    "Thymine": {
+        "HOMO (eV)": -11.0209,
+        "LUMO (eV)": -7.8232,
+        "HOMO-LUMO Gap (eV)": 3.1976999999999998,
+        "Total Energy (Eh)": -27.785956411572,
+        "Dipole Moment (D)": 4.646
+    },
+    "Catechol": {
+        "HOMO (eV)": -10.068,
+        "LUMO (eV)": -6.0892,
+        "HOMO-LUMO Gap (eV)": 3.9788,
+        "Total Energy (Eh)": -24.021786340856,
+        "Dipole Moment (D)": 1.461
+    },
+    "Diethanolamine": {
+        "HOMO (eV)": -9.5117,
+        "LUMO (eV)": 0.298,
+        "HOMO-LUMO Gap (eV)": 9.8097,
+        "Total Energy (Eh)": -25.199565826333,
+        "Dipole Moment (D)": 3.032
+    },
+    "Tryptophan": {
+        "HOMO (eV)": -9.7441,
+        "LUMO (eV)": -7.0063,
+        "HOMO-LUMO Gap (eV)": 2.737799999999999,
+        "Total Energy (Eh)": -43.662340033005,
+        "Dipole Moment (D)": 3.881
+    },
+    "N-Methylformamide": {
+        "HOMO (eV)": -10.9304,
+        "LUMO (eV)": -6.5314,
+        "HOMO-LUMO Gap (eV)": 4.399000000000001,
+        "Total Energy (Eh)": -13.809880895811,
+        "Dipole Moment (D)": 4.403
+    },
+    "Barbituric_Acid": {
+        "HOMO (eV)": -11.9616,
+        "LUMO (eV)": -8.5189,
+        "HOMO-LUMO Gap (eV)": 3.4427000000000003,
+        "Total Energy (Eh)": -28.700240755092,
+        "Dipole Moment (D)": 0.642
+    },
+    "Butanoic_Acid": {
+        "HOMO (eV)": -11.3126,
+        "LUMO (eV)": -6.9573,
+        "HOMO-LUMO Gap (eV)": 4.3553,
+        "Total Energy (Eh)": -20.787929649437,
+        "Dipole Moment (D)": 1.989
+    },
+    "Water": {
+        "HOMO (eV)": -12.1307,
+        "LUMO (eV)": 1.108,
+        "HOMO-LUMO Gap (eV)": 13.2387,
+        "Total Energy (Eh)": -5.070544094138,
+        "Dipole Moment (D)": 2.215
+    },
+    "Hydroxylamine": {
+        "HOMO (eV)": -10.4932,
+        "LUMO (eV)": 0.2327,
+        "HOMO-LUMO Gap (eV)": 10.7259,
+        "Total Energy (Eh)": -8.442180117104,
+        "Dipole Moment (D)": 0.665
+    },
+    "Adenine": {
+        "HOMO (eV)": -9.8961,
+        "LUMO (eV)": -7.9807,
+        "HOMO-LUMO Gap (eV)": 1.9154000000000009,
+        "Total Energy (Eh)": -24.441720398354,
+        "Dipole Moment (D)": 5.805
+    },
+    "Propan-2-ol": {
+        "HOMO (eV)": -11.046,
+        "LUMO (eV)": 0.9684,
+        "HOMO-LUMO Gap (eV)": 12.0144,
+        "Total Energy (Eh)": -14.561667638272,
+        "Dipole Moment (D)": 1.813
+    },
+    "Acetamide": {
+        "HOMO (eV)": -10.7648,
+        "LUMO (eV)": -6.2054,
+        "HOMO-LUMO Gap (eV)": 4.559399999999999,
+        "Total Energy (Eh)": -13.819496697174,
+        "Dipole Moment (D)": 4.383
+    },
+    "Salicylic_Acid": {
+        "HOMO (eV)": -10.8411,
+        "LUMO (eV)": -7.6075,
+        "HOMO-LUMO Gap (eV)": 3.233600000000001,
+        "Total Energy (Eh)": -30.242589036563,
+        "Dipole Moment (D)": 2.919
+    },
+    "Formamide": {
+        "HOMO (eV)": -11.125,
+        "LUMO (eV)": -6.6985,
+        "HOMO-LUMO Gap (eV)": 4.4265,
+        "Total Energy (Eh)": -10.644270262662,
+        "Dipole Moment (D)": 4.313
+    },
+    "Methanol": {
+        "HOMO (eV)": -11.2938,
+        "LUMO (eV)": 1.4501,
+        "HOMO-LUMO Gap (eV)": 12.7439,
+        "Total Energy (Eh)": -8.226118397014,
+        "Dipole Moment (D)": 1.916
+    },
+    "Ethanol": {
+        "HOMO (eV)": -11.2171,
+        "LUMO (eV)": 1.3138,
+        "HOMO-LUMO Gap (eV)": 12.5309,
+        "Total Energy (Eh)": -11.394338789932,
+        "Dipole Moment (D)": 1.997
+    },
+    "Dimethylamine": {
+        "HOMO (eV)": -9.7507,
+        "LUMO (eV)": 0.992,
+        "HOMO-LUMO Gap (eV)": 10.7427,
+        "Total Energy (Eh)": -10.75424226308,
+        "Dipole Moment (D)": 1.172
+    },
+    "Glycine": {
+        "HOMO (eV)": -10.6664,
+        "LUMO (eV)": -7.2813,
+        "HOMO-LUMO Gap (eV)": 3.3851,
+        "Total Energy (Eh)": -17.877541992844,
+        "Dipole Moment (D)": 1.645
+    },
+    "Hydrogen_Peroxide": {
+        "HOMO (eV)": -12.0277,
+        "LUMO (eV)": -0.8924,
+        "HOMO-LUMO Gap (eV)": 11.1353,
+        "Total Energy (Eh)": -9.054669515882,
+        "Dipole Moment (D)": 0.001
+    },
+    "Phenol": {
+        "HOMO (eV)": -10.3853,
+        "LUMO (eV)": -6.166,
+        "HOMO-LUMO Gap (eV)": 4.2193000000000005,
+        "Total Energy (Eh)": -19.954146208362,
+        "Dipole Moment (D)": 1.513
+    },
+    "Ethylamine": {
+        "HOMO (eV)": -9.9663,
+        "LUMO (eV)": 0.8876,
+        "HOMO-LUMO Gap (eV)": 10.8539,
+        "Total Energy (Eh)": -10.754859978031,
+        "Dipole Moment (D)": 1.517
+    },
+    "Cytosine": {
+        "HOMO (eV)": -9.9644,
+        "LUMO (eV)": -7.4837,
+        "HOMO-LUMO Gap (eV)": 2.4807,
+        "Total Energy (Eh)": -23.951629108304,
+        "Dipole Moment (D)": 1.503
+    },
+    "Ammonia": {
+        "HOMO (eV)": -10.5865,
+        "LUMO (eV)": 0.6651,
+        "HOMO-LUMO Gap (eV)": 11.2516,
+        "Total Energy (Eh)": -4.426244035487,
+        "Dipole Moment (D)": 1.783
+    },
+    "Propylamine": {
+        "HOMO (eV)": -9.9432,
+        "LUMO (eV)": 0.7895,
+        "HOMO-LUMO Gap (eV)": 10.7327,
+        "Total Energy (Eh)": -13.919208865844,
+        "Dipole Moment (D)": 1.518
+    },
+    "Benzoic_Acid": {
+        "HOMO (eV)": -11.3009,
+        "LUMO (eV)": -7.8053,
+        "HOMO-LUMO Gap (eV)": 3.4956000000000005,
+        "Total Energy (Eh)": -26.173034162931,
+        "Dipole Moment (D)": 2.255
+    },
+    "Threonine": {
+        "HOMO (eV)": -10.3473,
+        "LUMO (eV)": -7.2541,
+        "HOMO-LUMO Gap (eV)": 3.0932000000000004,
+        "Total Energy (Eh)": -28.26437339126,
+        "Dipole Moment (D)": 2.386
+    },
+    "Propanoic_Acid": {
+        "HOMO (eV)": -11.3886,
+        "LUMO (eV)": -6.9963,
+        "HOMO-LUMO Gap (eV)": 4.3923000000000005,
+        "Total Energy (Eh)": -17.62308374919,
+        "Dipole Moment (D)": 1.976
+    },
+    "Chloroacetic_Acid": {
+        "HOMO (eV)": -11.6488,
+        "LUMO (eV)": -7.8616,
+        "HOMO-LUMO Gap (eV)": 3.7872,
+        "Total Energy (Eh)": -18.492125450398,
+        "Dipole Moment (D)": 2.331
+    },
+    "Cysteine": {
+        "HOMO (eV)": -10.3216,
+        "LUMO (eV)": -7.3781,
+        "HOMO-LUMO Gap (eV)": 2.9435,
+        "Total Energy (Eh)": -24.283584551288,
+        "Dipole Moment (D)": 1.966
+    },
+    "Oxalic_Acid": {
+        "HOMO (eV)": -12.1509,
+        "LUMO (eV)": -9.4921,
+        "HOMO-LUMO Gap (eV)": 2.6587999999999994,
+        "Total Energy (Eh)": -21.557864836749,
+        "Dipole Moment (D)": 0.0
+    },
+    "Histidine": {
+        "HOMO (eV)": -10.3052,
+        "LUMO (eV)": -7.3112,
+        "HOMO-LUMO Gap (eV)": 2.993999999999999,
+        "Total Energy (Eh)": -34.346653836231,
+        "Dipole Moment (D)": 4.108
+    },
+    "Sulfuric_Acid": {
+        "HOMO (eV)": -12.3787,
+        "LUMO (eV)": -7.3747,
+        "HOMO-LUMO Gap (eV)": 5.004,
+        "Total Energy (Eh)": -20.551851140988,
+        "Dipole Moment (D)": 3.422
+    },
+    "Acetic_Acid": {
+        "HOMO (eV)": -11.5044,
+        "LUMO (eV)": -6.9817,
+        "HOMO-LUMO Gap (eV)": 4.5227,
+        "Total Energy (Eh)": -14.459878512406,
+        "Dipole Moment (D)": 1.96
+    },
+    "Formic_Acid": {
+        "HOMO (eV)": -12.05,
+        "LUMO (eV)": -7.6661,
+        "HOMO-LUMO Gap (eV)": 4.383900000000001,
+        "Total Energy (Eh)": -11.283007331779,
+        "Dipole Moment (D)": 1.925
+    },
+    "Resorcinol": {
+        "HOMO (eV)": -10.2881,
+        "LUMO (eV)": -6.071,
+        "HOMO-LUMO Gap (eV)": 4.2171,
+        "Total Energy (Eh)": -24.02800599536,
+        "Dipole Moment (D)": 2.622
+    },
+    "Saccharin": {
+        "HOMO (eV)": -11.8758,
+        "LUMO (eV)": -8.7786,
+        "HOMO-LUMO Gap (eV)": 3.097199999999999,
+        "Total Energy (Eh)": -35.896894117402,
+        "Dipole Moment (D)": 4.387
     }
-  },
-  {
-    "id": "betaine",
-    "name": "Betaine",
-    "formula": "C5H11NO2",
-    "mw": 117.15,
-    "descriptors": {
-      "homo": -0.291,
-      "lumo": 0.138,
-      "gap": 0.429,
-      "energy": -455.18,
-      "dipole": 14.2,
-      "volume": 115.7,
-      "polarizability": 11.8,
-      "electrophilicity": 1.18
-    }
-  },
-  {
-    "id": "zinc_chloride",
-    "name": "Zinc Chloride",
-    "formula": "ZnCl2",
-    "mw": 136.30,
-    "descriptors": {
-      "homo": -0.425,
-      "lumo": 0.089,
-      "gap": 0.514,
-      "energy": -742.35,
-      "dipole": 8.9,
-      "volume": 85.2,
-      "polarizability": 8.3,
-      "electrophilicity": 1.82
-    }
-  },
-  {
-    "id": "urea",
-    "name": "Urea",
-    "formula": "CH4N2O",
-    "mw": 60.06,
-    "descriptors": {
-      "homo": -0.312,
-      "lumo": 0.165,
-      "gap": 0.477,
-      "energy": -224.98,
-      "dipole": 4.6,
-      "volume": 58.4,
-      "polarizability": 4.9,
-      "electrophilicity": 0.95
-    }
-  },
-  {
-    "id": "acetylcholine",
-    "name": "Acetylcholine Chloride",
-    "formula": "C7H16ClNO2",
-    "mw": 181.66,
-    "descriptors": {
-      "homo": -0.278,
-      "lumo": 0.155,
-      "gap": 0.433,
-      "energy": -572.41,
-      "dipole": 16.8,
-      "volume": 158.9,
-      "polarizability": 15.2,
-      "electrophilicity": 1.31
-    }
-  }
-]
+}
