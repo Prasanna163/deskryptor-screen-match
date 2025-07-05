@@ -1,0 +1,82 @@
+[
+  {
+    "id": "choline",
+    "name": "Choline Chloride",
+    "formula": "C5H14ClNO",
+    "mw": 139.62,
+    "descriptors": {
+      "homo": -0.285,
+      "lumo": 0.142,
+      "gap": 0.427,
+      "energy": -458.92,
+      "dipole": 15.8,
+      "volume": 128.3,
+      "polarizability": 12.4,
+      "electrophilicity": 1.25
+    }
+  },
+  {
+    "id": "betaine",
+    "name": "Betaine",
+    "formula": "C5H11NO2",
+    "mw": 117.15,
+    "descriptors": {
+      "homo": -0.291,
+      "lumo": 0.138,
+      "gap": 0.429,
+      "energy": -455.18,
+      "dipole": 14.2,
+      "volume": 115.7,
+      "polarizability": 11.8,
+      "electrophilicity": 1.18
+    }
+  },
+  {
+    "id": "zinc_chloride",
+    "name": "Zinc Chloride",
+    "formula": "ZnCl2",
+    "mw": 136.30,
+    "descriptors": {
+      "homo": -0.425,
+      "lumo": 0.089,
+      "gap": 0.514,
+      "energy": -742.35,
+      "dipole": 8.9,
+      "volume": 85.2,
+      "polarizability": 8.3,
+      "electrophilicity": 1.82
+    }
+  },
+  {
+    "id": "urea",
+    "name": "Urea",
+    "formula": "CH4N2O",
+    "mw": 60.06,
+    "descriptors": {
+      "homo": -0.312,
+      "lumo": 0.165,
+      "gap": 0.477,
+      "energy": -224.98,
+      "dipole": 4.6,
+      "volume": 58.4,
+      "polarizability": 4.9,
+      "electrophilicity": 0.95
+    }
+  },
+  {
+    "id": "acetylcholine",
+    "name": "Acetylcholine Chloride",
+    "formula": "C7H16ClNO2",
+    "mw": 181.66,
+    "descriptors": {
+      "homo": -0.278,
+      "lumo": 0.155,
+      "gap": 0.433,
+      "energy": -572.41,
+      "dipole": 16.8,
+      "volume": 158.9,
+      "polarizability": 15.2,
+      "electrophilicity": 1.31
+    }
+  }
+]

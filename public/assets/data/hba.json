@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ethylene_glycol",
+    "name": "Ethylene Glycol",
+    "formula": "C2H6O2",
+    "mw": 62.07,
+    "descriptors": {
+      "homo": -0.368,
+      "lumo": 0.195,
+      "gap": 0.563,
+      "energy": -229.87,
+      "dipole": 2.8,
+      "volume": 65.1,
+      "polarizability": 5.8,
+      "nucleophilicity": 2.15
+    }
+  },
+  {
+    "id": "glycerol",
+    "name": "Glycerol",
+    "formula": "C3H8O3",
+    "mw": 92.09,
+    "descriptors": {
+      "homo": -0.374,
+      "lumo": 0.189,
+      "gap": 0.563,
+      "energy": -344.12,
+      "dipole": 3.1,
+      "volume": 89.7,
+      "polarizability": 7.2,
+      "nucleophilicity": 2.28
+    }
+  },
+  {
+    "id": "acetamide",
+    "name": "Acetamide",
+    "formula": "C2H5NO",
+    "mw": 59.07,
+    "descriptors": {
+      "homo": -0.321,
+      "lumo": 0.172,
+      "gap": 0.493,
+      "energy": -208.45,
+      "dipole": 3.9,
+      "volume": 68.3,
+      "polarizability": 6.1,
+      "nucleophilicity": 1.85
+    }
+  },
+  {
+    "id": "dimethyl_sulfoxide",
+    "name": "Dimethyl Sulfoxide",
+    "formula": "C2H6OS",
+    "mw": 78.13,
+    "descriptors": {
+      "homo": -0.295,
+      "lumo": 0.158,
+      "gap": 0.453,
+      "energy": -552.78,
+      "dipole": 4.2,
+      "volume": 71.5,
+      "polarizability": 7.8,
+      "nucleophilicity": 2.05
+    }
+  },
+  {
+    "id": "formamide",
+    "name": "Formamide",
+    "formula": "CH3NO",
+    "mw": 45.04,
+    "descriptors": {
+      "homo": -0.335,
+      "lumo": 0.181,
+      "gap": 0.516,
+      "energy": -169.32,
+      "dipole": 3.7,
+      "volume": 48.2,
+      "polarizability": 4.3,
+      "nucleophilicity": 1.72
+    }
+  },
+  {
+    "id": "lactic_acid",
+    "name": "Lactic Acid",
+    "formula": "C3H6O3",
+    "mw": 90.08,
+    "descriptors": {
+      "homo": -0.385,
+      "lumo": 0.201,
+      "gap": 0.586,
+      "energy": -342.89,
+      "dipole": 2.5,
+      "volume": 85.6,
+      "polarizability": 6.9,
+      "nucleophilicity": 2.42
+    }
+  }
+]
