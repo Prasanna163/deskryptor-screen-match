@@ -42,9 +42,57 @@ const DatabaseViewer = () => {
         const hbaData = await hbaResponse.json();
         const complexData = await complexResponse.json();
 
-        setHbdList(hbdData);
-        setHbaList(hbaData);
-        setComplexes(complexData);
+        // Transform HBD data
+        const hbdMolecules = Object.entries(hbdData).map(([name, data]: [string, any]) => ({
+          id: name,
+          name: name.replace(/_/g, ' '),
+          formula: name, // Using name as formula since it's not in the data
+          mw: 0, // Not available in current data
+          descriptors: {
+            homo: data["HOMO (eV)"],
+            lumo: data["LUMO (eV)"],
+            gap: data["HOMO-LUMO Gap (eV)"],
+            energy: data["Total Energy (Eh)"],
+            dipole: data["Dipole Moment (D)"],
+            volume: 0 // Not available in current data
+          }
+        }));
+
+        // Transform HBA data
+        const hbaMolecules = Object.entries(hbaData).map(([name, data]: [string, any]) => ({
+          id: name,
+          name: name.replace(/_/g, ' '),
+          formula: name, // Using name as formula since it's not in the data
+          mw: 0, // Not available in current data
+          descriptors: {
+            homo: data["HOMO (eV)"],
+            lumo: data["LUMO (eV)"],
+            gap: data["HOMO-LUMO Gap (eV)"],
+            energy: data["Total Energy (Eh)"],
+            dipole: data["Dipole Moment (D)"],
+            volume: 0 // Not available in current data
+          }
+        }));
+
+        // Transform complex data
+        const complexArray = Object.entries(complexData).map(([name, data]: [string, any]) => ({
+          hbd_id: data.HBD,
+          hba_id: data.HBA,
+          ratio: "1:1", // Default ratio since not in data
+          efi_score: data["EFI Score"],
+          interaction_energy: data["Interaction Energy (kcal/mol)"],
+          complex_descriptors: {
+            homo: data["HOMO (eV)"],
+            lumo: data["LUMO (eV)"],
+            gap: data["HOMO-LUMO Gap (eV)"],
+            energy: data["Total Energy (Eh)"],
+            dipole: data["Dipole Moment (D)"]
+          }
+        }));
+
+        setHbdList(hbdMolecules);
+        setHbaList(hbaMolecules);
+        setComplexes(complexArray);
         setLoading(false);
       } catch (error) {
         console.error('Error loading data:', error);
