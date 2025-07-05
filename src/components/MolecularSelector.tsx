@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Check, ChevronsUpDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface Molecule {
   id: string;
@@ -30,6 +34,8 @@ const MolecularSelector = () => {
   const [compatibleHbas, setCompatibleHbas] = useState<Molecule[]>([]);
   const [compatibleHbds, setCompatibleHbds] = useState<Molecule[]>([]);
   const [currentComplex, setCurrentComplex] = useState<Complex | null>(null);
+  const [hbdOpen, setHbdOpen] = useState(false);
+  const [hbaOpen, setHbaOpen] = useState(false);
 
   useEffect(() => {
     const loadData = async () => {
@@ -166,21 +172,52 @@ const MolecularSelector = () => {
             <CardTitle className="text-accent">Hydrogen Bond Donor (HBD)</CardTitle>
           </CardHeader>
           <CardContent>
-            <Select value={selectedHbd} onValueChange={setSelectedHbd}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select HBD..." />
-              </SelectTrigger>
-              <SelectContent>
-                {hbdList.map((hbd) => (
-                  <SelectItem key={hbd.id} value={hbd.id}>
-                    <div>
-                      <div className="font-medium">{hbd.name}</div>
-                      <div className="text-sm text-muted-foreground">{hbd.formula} (MW: {hbd.mw})</div>
-                    </div>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <Popover open={hbdOpen} onOpenChange={setHbdOpen}>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  role="combobox"
+                  aria-expanded={hbdOpen}
+                  className="w-full justify-between"
+                >
+                  {selectedHbd
+                    ? hbdList.find((hbd) => hbd.id === selectedHbd)?.name
+                    : "Select HBD..."}
+                  <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-full p-0">
+                <Command>
+                  <CommandInput placeholder="Search HBD..." className="h-9" />
+                  <CommandEmpty>No HBD found.</CommandEmpty>
+                  <CommandList>
+                    <CommandGroup>
+                      {hbdList.map((hbd) => (
+                        <CommandItem
+                          key={hbd.id}
+                          value={hbd.id}
+                          onSelect={(currentValue) => {
+                            setSelectedHbd(currentValue === selectedHbd ? "" : currentValue);
+                            setHbdOpen(false);
+                          }}
+                        >
+                          <div className="flex flex-col">
+                            <div className="font-medium">{hbd.name}</div>
+                            <div className="text-sm text-muted-foreground">{hbd.formula} (MW: {hbd.mw})</div>
+                          </div>
+                          <Check
+                            className={cn(
+                              "ml-auto h-4 w-4",
+                              selectedHbd === hbd.id ? "opacity-100" : "opacity-0"
+                            )}
+                          />
+                        </CommandItem>
+                      ))}
+                    </CommandGroup>
+                  </CommandList>
+                </Command>
+              </PopoverContent>
+            </Popover>
           </CardContent>
         </Card>
 
@@ -189,21 +226,52 @@ const MolecularSelector = () => {
             <CardTitle className="text-accent">Hydrogen Bond Acceptor (HBA)</CardTitle>
           </CardHeader>
           <CardContent>
-            <Select value={selectedHba} onValueChange={setSelectedHba}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select HBA..." />
-              </SelectTrigger>
-              <SelectContent>
-                {hbaList.map((hba) => (
-                  <SelectItem key={hba.id} value={hba.id}>
-                    <div>
-                      <div className="font-medium">{hba.name}</div>
-                      <div className="text-sm text-muted-foreground">{hba.formula} (MW: {hba.mw})</div>
-                    </div>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <Popover open={hbaOpen} onOpenChange={setHbaOpen}>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  role="combobox"
+                  aria-expanded={hbaOpen}
+                  className="w-full justify-between"
+                >
+                  {selectedHba
+                    ? hbaList.find((hba) => hba.id === selectedHba)?.name
+                    : "Select HBA..."}
+                  <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-full p-0">
+                <Command>
+                  <CommandInput placeholder="Search HBA..." className="h-9" />
+                  <CommandEmpty>No HBA found.</CommandEmpty>
+                  <CommandList>
+                    <CommandGroup>
+                      {hbaList.map((hba) => (
+                        <CommandItem
+                          key={hba.id}
+                          value={hba.id}
+                          onSelect={(currentValue) => {
+                            setSelectedHba(currentValue === selectedHba ? "" : currentValue);
+                            setHbaOpen(false);
+                          }}
+                        >
+                          <div className="flex flex-col">
+                            <div className="font-medium">{hba.name}</div>
+                            <div className="text-sm text-muted-foreground">{hba.formula} (MW: {hba.mw})</div>
+                          </div>
+                          <Check
+                            className={cn(
+                              "ml-auto h-4 w-4",
+                              selectedHba === hba.id ? "opacity-100" : "opacity-0"
+                            )}
+                          />
+                        </CommandItem>
+                      ))}
+                    </CommandGroup>
+                  </CommandList>
+                </Command>
+              </PopoverContent>
+            </Popover>
           </CardContent>
         </Card>
       </div>
