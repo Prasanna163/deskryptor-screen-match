@@ -8,7 +8,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-12">
-            <h1 className="text-5xl font-bold text-primary mb-4 bg-gradient-primary bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold text-primary mb-4 pt-2 bg-gradient-primary bg-clip-text text-transparent">
               DESkryptor
             </h1>
             <p className="text-xl text-muted-foreground mb-2">
